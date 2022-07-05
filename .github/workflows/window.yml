@@ -28,7 +28,7 @@ jobs:
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
-      - run: java -cp java FacebookTestDemo
+      - run: java -cp java TestDemo
       
 
       # Runs a single command using the runners shell
