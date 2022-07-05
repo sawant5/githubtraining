@@ -16,4 +16,4 @@ jobs:
       
       - name: Run a one-line script
         run: mvn clean install
-        continue-on-error: true
+        continue-on-error: false
