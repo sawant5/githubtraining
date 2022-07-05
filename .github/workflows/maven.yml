@@ -23,3 +23,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean verify -Dtestng.dtd.http=true
+      
+    - name: Tests completed
+      run: Tests completed. congrats
