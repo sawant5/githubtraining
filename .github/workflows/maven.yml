@@ -26,4 +26,4 @@ jobs:
       run: mvn clean verify -Dtestng.dtd.http=true
       
     - name: Tests completed
-      run: Tests completed. congrats
+      run: echo Tests completed. congrats
