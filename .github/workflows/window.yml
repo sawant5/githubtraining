@@ -29,7 +29,7 @@ jobs:
         with:
           java-version: 11
       - name: Build with Maven
-        run: mvn clean verify -D
+        run: mvn clean verify -Dtestng.dtd.http=true
       
       
       
