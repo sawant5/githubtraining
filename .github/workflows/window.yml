@@ -30,13 +30,9 @@ jobs:
           java-version: '11'
       - name: Step 1 :List ALL original files
         run: ls -a
-      - name: Step 2 Github Build Maven Project
-        run: mvn -B package --file pom.xml
-      - name: Target Folder is
-        run: |
-          cd target
-          ls -a
-      
+      - name:  Step 2 Build with Maven
+        run: mvn --batch-mode --update-snapshots package
+
       
       
       
