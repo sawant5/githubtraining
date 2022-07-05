@@ -28,8 +28,14 @@ jobs:
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '11'
-      - name: List ALL original file
-        run: ls
+      - name: Step 1 :List ALL original files
+        run: ls -a
+      - name: Step 2 Github Build Maven Project
+        run: mvn -B package --file pom.xml
+      - name: Target Folder is
+        run: |
+          cd target
+          ls -a
       
       
       
