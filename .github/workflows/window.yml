@@ -29,11 +29,5 @@ jobs:
       with:
         node-version: ${{ matrix.node_version }}
 
-    - name: Install packages
-      run: npm install
-
-    - name: Run build
-      run: npm run build:linux
-
     - name: Moving build to artifacts directory
       run: ./scripts/moveFiles.sh
